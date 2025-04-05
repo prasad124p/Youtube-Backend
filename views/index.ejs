@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="w-full h-full bg-zinc-900 p-10 text-white">
+      <h1 class="text-3xl tracking-tight mb-5 text-zinc-400">Create User</h1>
+      <hr />
+      <form class="mt-10" action="/create" method="post">
+        <input
+          class="px-5 py-3 ml-5 bg-zinc-900 text-white border-2 outline-none rounded-xl border-zinc-700"
+          type="text"
+          placeholder="Name"
+          name="name"
+        />
+        <input
+          class="px-5 py-3 ml-5 bg-zinc-900 text-white border-2 outline-none rounded-xl border-zinc-700"
+          type="text"
+          placeholder="Email"
+          name="email"
+        />
+        <input
+          class="px-5 py-3 ml-5 bg-zinc-900 text-white border-2 outline-none rounded-xl border-zinc-700"
+          type="text"
+          placeholder="Image URL"
+          name="image"
+        />
+        <input
+          class="px-5 py-3 bg-green-900 rounded-xl ml-5"
+          type="submit"
+          value="create User"
+        />
+      </form>
+      <div class="nav mt-10 ml-5 mb-10">
+        <button class="button px-5 bg-green-900 rounded-lg">
+          <a class="text-black" href="/read">Read User</a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
